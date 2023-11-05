@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+:focus, :active {
+  outline: none; }
+
+a:focus, a:active {
+  outline: none; }
+
+nav, footer, header, aside {
+  display: block; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-style: 100%;
+  line-height: 1;
+  font-style: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+input, button, textarea {
+  font-family: inherit; }
+
+input::-ms-clear {
+  display: none; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style-type: none; }
+
+img {
+  vertical-align: top; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-style: inherit;
+  font-weight: 400; }
+
+textarea {
+  resize: none; }
+
+.page__main-block_drawing {
+  background: url("../img/service/main-block/1.jpg") right/auto no-repeat; }
+
+.main-block__body_indentation {
+  padding-top: 152px;
+  padding-bottom: 179px; }
+
+.page__service {
+  margin-top: 120px; }
+
+.service__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 120px; }
+
+.service__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .service__info_reverse {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse; }
+
+@media (max-width: 600px) {
+  .service__images {
+    width: 100%; } }
+
+.service__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 48px; }
+
+.service__construction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 24px; }
+
+.service__buttom {
+  max-width: 160px;
+  color: var(--primary, #FF5A30);
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+  /* 314.286% */
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: 1px solid var(--primary, #FF5A30); }
+
+.construction__title {
+  color: var(--gray-900, #1E212C);
+  /* h2 */
+  font-family: Ubuntu;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  /* 48px */ }
+
+.construction__sub-title {
+  color: var(--gray-700, #787A80);
+  /* base/regular */
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  /* 25.6px */
+  max-width: 575px; }
+
+.page__your-question {
+  margin-bottom: -95px;
+  margin-top: 180px;
+  background: url("../img/service/form/1.jpg") lightgray 50%/cover no-repeat; }
+
+.your-question__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end; }
+
+@media (max-width: 520px) {
+  .your-question__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; } }
+
+.your-question__body {
+  padding-top: 80px;
+  padding-bottom: 80px; }
+
+.your-question__form {
+  padding: 48px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 24px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  border-radius: 4px;
+  border: 1px solid var(--gray-300, #E5E8ED);
+  background: var(--white, #FFF);
+  /* shadow/large */
+  -webkit-box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.05), 0px 12px 10px -6px rgba(30, 33, 44, 0.08), 0px 26px 24px -10px rgba(30, 33, 44, 0.1), 0px 60px 80px -20px rgba(30, 33, 44, 0.16);
+  box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.05), 0px 12px 10px -6px rgba(30, 33, 44, 0.08), 0px 26px 24px -10px rgba(30, 33, 44, 0.1), 0px 60px 80px -20px rgba(30, 33, 44, 0.16); }
+
+@media (max-width: 520px) {
+  .your-question__form {
+    padding: 10px 5px; } }
+
+.form__title {
+  color: var(--gray-900, #1E212C);
+  /* h3 */
+  font-family: Ubuntu;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  /* 42px */ }
+
+.form__data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 20px; }
+
+.form__name {
+  color: var(--gray-800, #424551);
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  /* 21px */ }
+
+.form__input {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 16px;
+  min-width: 415px;
+  min-height: 44px;
+  color: var(--gray-600, #9A9CA5);
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  /* 21px */
+  border-radius: 4px;
+  border: 1px solid var(--gray-400, #D7DADD);
+  background: var(--gray-200, #F4F5F6); }
+
+@media (max-width: 440px) {
+  .form__input {
+    width: 200px; } }
+
+.form__phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--gray-800, #424551);
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  /* 21px */ }
+
+.form__email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--gray-800, #424551);
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  /* 21px */ }
+
+.form__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--gray-800, #424551);
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  /* 21px */ }
+
+.form__window {
+  min-width: 415px;
+  min-height: 66px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 16px;
+  color: var(--gray-600, #9A9CA5);
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  /* 21px */
+  border-radius: 4px;
+  border: 1px solid var(--gray-400, #D7DADD);
+  background: var(--gray-200, #F4F5F6); }
+
+.form__click {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.form__button {
+  min-width: 174px;
+  min-height: 44px;
+  color: var(--white, #FFF);
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+  /* 314.286% */
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background: var(--primary, #FF5A30); }

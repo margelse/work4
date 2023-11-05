@@ -1,0 +1,263 @@
+@import "nullstyle.scss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+.page {
+	&__main-block {
+		&_drawing {
+			background: url('../img/service/main-block/1.jpg') right / auto no-repeat;
+		}
+	}
+}
+.main-block {
+	&__body {
+		&_indentation {
+			padding-top: 152px;
+			padding-bottom: 179px;
+		}
+	}
+}
+.page {
+	&__service {
+		margin-top: 120px;
+	}
+}
+.service {
+	&__container {
+		display: flex;
+		flex-direction:column;
+		gap: 120px;
+	}
+	&__info {
+		display: flex;
+		align-items: center;
+		gap: 80px;
+		&_reverse {
+			display: flex;
+			gap: 80px;
+			align-items: center;
+		}
+		@media (max-width: 992px) {
+			&_reverse {
+				display: flex;
+				flex-direction:column-reverse;
+			}
+		}
+	}
+	@media (max-width: 992px) {
+			&__info {
+				display: flex;
+				flex-direction:column;
+			}
+		}	
+	&__images {}
+	@media (max-width: 650px) {
+		&__images {
+			width: 100%;
+		}
+	}
+	&__body {
+		display: flex;
+		flex-direction:column;
+		gap: 48px;
+	}
+	&__construction {
+		display: flex;
+		flex-direction:column;
+		gap: 24px;
+	}
+	&__buttom {
+		max-width: 160px;
+		color: var(--primary, #FF5A30);
+		text-align: center;
+		font-family: Ubuntu;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 44px; /* 314.286% */
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+		border-radius: 4px;
+		border: 1px solid var(--primary, #FF5A30);
+	}
+}
+.construction {
+	&__title {
+		color: var(--gray-900, #1E212C);
+		/* h2 */
+		font-family: Ubuntu;
+		font-size: 32px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 150%; /* 48px */
+	}
+	&__sub-title {
+		color: var(--gray-700, #787A80);
+		/* base/regular */
+		font-family: Ubuntu;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 160%; /* 25.6px */
+		max-width: 575px;
+	}
+}
+
+.page {
+	&__your-question {
+		margin-bottom: -95px;
+		margin-top: 180px;
+		background:url('../img/service/form/1.jpg') lightgray 50% / cover no-repeat;
+	}
+}
+.your-question {
+	&__container {
+		display: flex;
+		justify-content: end;
+	}
+	@media (max-width: 650px) {
+		&__container {
+			display: flex;
+			justify-content: center;
+		}
+	}
+	&__body {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	&__form {
+		padding: 48px 40px;
+		display: flex;
+		flex-direction:column;
+		gap: 24px;
+		border-radius: 4px;
+		border: 1px solid var(--gray-300, #E5E8ED);
+		background: var(--white, #FFF);
+		box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.05), 0px 12px 10px -6px rgba(30, 33, 44, 0.08), 0px 26px 24px -10px rgba(30, 33, 44, 0.10), 0px 60px 80px -20px rgba(30, 33, 44, 0.16);
+	}
+	@media (max-width: 520px) {
+		&__form {
+			padding: 10px 5px;
+		}
+	}
+
+}
+.form {
+	&__title {
+		color: var(--gray-900, #1E212C);
+		font-family: Ubuntu;
+		font-size: 28px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 150%;
+	}
+	&__discuss {
+		display: flex;
+		flex-direction:column;
+		gap: 20px;
+	}
+	&__click {
+		display: flex;
+		justify-content: center;
+	}
+	&__button {
+		min-width: 174px;
+		min-height: 44px;
+		color: var(--white, #FFF);
+		text-align: center;
+		font-family: Ubuntu;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 44px; /* 314.286% */
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+		border-radius: 4px;
+		background: var(--primary, #FF5A30);
+	}
+}
+.discuss {
+	&__data {
+		display: flex;
+		flex-direction:column;
+		gap: 8px;
+		color: var(--gray-800, #424551);
+		font-family: Ubuntu;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 150%;
+	}
+	&__input {
+		display: flex;
+		width: 100%;
+		padding: 11px 30px 12px 16px;
+		align-items: center;
+		border-radius: 4px;
+		border: 1px solid var(--gray-400, #D7DADD);
+		background: var(--gray-200, #F4F5F6);
+	}
+	.discuss__input::placeholder {
+		color: var(--gray-600, #9A9CA5);
+		font-family: Ubuntu;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 150%;
+	}
+	&__window {
+		display: flex;
+		width:100%;
+		height: 100%;
+		padding: 11px 30px 34px 16px;
+		align-items: center;
+		flex-shrink: 0;
+		border-radius: 4px;
+		border: 1px solid var(--gray-400, #D7DADD);
+		background: var(--gray-200, #F4F5F6);
+	}
+	.discuss__window::placeholder {
+		color: var(--gray-600, #9A9CA5);
+		font-family: Ubuntu;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 150%;
+	}
+	&__text {
+		max-width: 387px;
+		color: var(--gray-800, #424551);
+		font-family: Ubuntu;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 150%;
+	}
+	&__real-box {
+		display: none;
+	}
+	&__box {
+		display: flex;
+		gap: 12px;
+	}
+	&__custom-box {
+		margin-top: 5px;
+		border: 1px solid #FF5A30;
+		border-radius: 4px;
+		width: 15px;
+		height: 15px;
+		svg {
+			opacity: 0;
+			transition:0.3s;
+		}
+	}
+	&__real-box:checked + label {
+		.discuss {
+			&__custom-box {
+				svg {
+					opacity: 1 !important;
+					transform:translate(-1px, -1px);
+				}
+			}
+		}
+	}
+}
+
